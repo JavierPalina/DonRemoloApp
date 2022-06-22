@@ -1,0 +1,33 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    font-family: system-ui;
+}
+
+.logo {
+    width: 80px;
+}
+
+.containerLogo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.textPiz {
+    font-weight: bold;
+    color: #e74423;
+}
+
+.textDon {
+    font-weight: bold;
+    font-size: 17px;
+    margin-top: -7px;
+    color: #e74423;
+}
+
+.containerText {
+    margin-top: 20px;
+}

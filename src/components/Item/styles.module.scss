@@ -1,0 +1,142 @@
+/* Sidebar Cerrada e item Activo */
+.normal[aria-current] {
+    position: relative;
+    width: 60px;
+    height: 50px;
+    color: #e74423;
+    background-color: #F6F6F6;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition-duration: 0.3s;
+
+    div {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    path {
+        fill: #e74423;
+    }
+
+    ::after {
+        content: "";
+        position: absolute;
+        width: 3px;
+        height: 40px;
+        background-color: #e74423;
+        left: 59px;
+        top: 6px;
+        border-radius: 2px;
+    }
+}
+
+/* Sidebar Cerrada e item Desactivado */
+.normal {
+    width: 60px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition-duration: 0.3s;
+    margin-bottom: 10px;
+
+    div {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    a:hover {
+        path {
+            fill: white;
+        }
+    }
+}
+
+/* Sidebar Abierta e item Desactivado */
+.linkOpen {
+    height: 50px;
+    display: flex;
+    padding-left: 30px;
+    align-items: center;
+    gap: 40px;
+    transition-duration: 0.3s;
+    margin-bottom: 10px;
+
+    p {
+        color: #8f8f8f;
+        font-weight: bold;
+        font-size: 14px;
+        padding-bottom: 2px;
+    }
+
+    div {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+/* Hovers Sidebar Cerrada */
+.normal:hover {
+    path {
+        fill: #e74423;
+    }
+}
+
+/* Sidebar Abierta e item Activado */
+.linkOpen[aria-current] {
+    position: relative;
+    height: 50px;
+    padding-left: 30px;
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    transition-duration: 0.3s;
+    background-color: #F6F6F6;
+
+    path {
+        fill: #e74423;
+    }
+
+    ::after {
+        content: "";
+        position: absolute;
+        width: 3px;
+        height: 40px;
+        background-color: #e74423;
+        left: 282px;
+        top: 6px;
+        border-radius: 2px;
+        transition-duration: 0.3s;
+    }
+
+    div {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    p {
+        color: #e74423;
+        font-weight: bold;
+        font-size: 14px;
+        padding-bottom: 2px;
+    }
+
+    p::after {
+        display: none;
+    }
+}
+
+/* Hovers Sidebar Abierta */
+.linkOpen:hover {
+    p {
+        color: #e74423;
+    }
+    path {
+        fill: #e74423;
+    }
+}

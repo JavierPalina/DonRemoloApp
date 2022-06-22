@@ -1,0 +1,45 @@
+.sidebar {
+    width: 65px;
+    height: 100vh;
+    background-color: #F6F6F6;
+    transition-duration: 0.3s;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .hamburger {
+        width: 25px;
+        margin-top: 35px;
+        cursor: pointer;
+    }
+
+    .linksContainer {
+        display: flex;
+        flex-direction: column;
+        margin-top: 80px;
+    }
+}
+
+.sidebarOpen {
+    width: 285px;
+    height: 100vh;
+    background-color: #F6F6F6;
+    transition-duration: 0.3s;
+
+    .linksContainer {
+        display: flex;
+        flex-direction: column;
+        margin-top: 80px;
+    }
+
+    a {
+        text-decoration: none;
+    }
+
+    .hamburger {
+        width: 25px;
+        margin-top: 20px;
+        cursor: pointer;
+        margin-left: 17.5px;
+    }
+}
