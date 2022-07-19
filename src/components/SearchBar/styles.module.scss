@@ -1,0 +1,33 @@
+.container {
+    width: 100%;
+    height: 60px;
+    background-color: white;
+
+    form {
+        width: 92%;
+        border: 1px solid rgba($color: white, $alpha: 1.0);
+        border-radius: 4px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        background: #F6F6F6;
+        margin: 30px 0 0 20px;
+
+        input {
+            border: none;
+            outline: none;
+            box-shadow: none;
+            width: 100%;
+            font-size: 16px;
+            font-weight: 400;
+            padding: 8px 10px;
+            background: #F6F6F6;
+            color: #A6A6A6;
+        }
+
+        i {
+            padding-left: 10px;
+            color: #A6A6A6;
+        }
+    }
+}

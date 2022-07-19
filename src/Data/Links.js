@@ -1,6 +1,7 @@
 export const Links = [
   {
-    to: '/inicio',
+    id: 1,
+    to: '/',
     text: 'Inicio',
     svg: (
     <svg 
@@ -18,6 +19,7 @@ export const Links = [
     ),
   },
   {
+    id: 2,
     to: '/favoritos',
     text: 'Favoritos',
     svg: (
@@ -36,6 +38,7 @@ export const Links = [
     ),
   },
   {
+    id: 3,
     to: '/preferencias',
     text: 'Preferencias',
     svg: (
@@ -53,6 +56,7 @@ export const Links = [
     ),
   },
   {
+    id: 4,
     to: '/ayuda',
     text: 'Ayuda',
     svg: (
